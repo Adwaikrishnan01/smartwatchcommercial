@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <title>SmartWatch</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+
+        
+</head>
+<body>
+    <div class ="navbar">
+       
+            <img src="style/images/watch.png">
+        <nav>
+                <ul id="navList">
+                    <li> <a href="">Watches</a></li>
+                    <li> <a href="">Watch accessories</a></li>
+                    <li> <a href="">About Us</a></li>
+                    <li> <a href="">Others</a></li>
+                </ul>
+        </nav>
+            
+        
+        <button class="menu" onclick="togglemenu()" id="menu">
+            <img src="style/images/menu.png"></button>
+    </div>
+
+    <div class="content">
+        <div class="col-1">
+            <h1>Slim OLED<br>SmartWatch</h1>
+            <h2>Water resistant and upto 3 weeks of battery life.</h2> 
+            <h3>$49.99</h3>
+            <button class="buy">Buy now</button>
+               </div>
+               <div class="col-2">
+            <img src="style/images/watch2.png">
+         <div class="watch-background"></div>
+        
+    </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <img src="style/images/facebook.png">
+            <img src="style/images/twitter.png">
+            <img src="style/images/instagram.png">
+        </div>
+        <div class="bottom"></div>
+    </div>
+    
+    <script>
+        var navList= document.getElementById('navList');
+         navList.style.maxHeight="0px";
+         function togglemenu(){
+          if(navList.style.maxHeight == "0px"){
+              navList.style.maxHeight = "95px";
+          }
+          else{
+              navList.style.maxHeight = "0px";
+          }
+         }
+         /*navList.style.display="none";
+         function togglemenu(){
+          if(navList.style.display=="none"){
+              navList.style.display="block";
+              
+          }
+          else{
+              navList.style.display="none";
+          }
+         }*/
+      </script>
+</body>
+</html>
